@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  line-height: 1;
+  color: #333;
+  text-align: left;
+  background-color: #282c34;
+}
+
+.navbar {
+  border-bottom: 0.5px solid white;
+}
+
+.bg-primary {
+  background-color: #61DAFB !important;
+}
+
+.navbar-brand {
+  /* This seems to do the trick (i.e., vertical padding
+  is 2px less than on the other <a>s */
+  margin: 0 !important;
+  padding: 18px 20px !important;
+}
+
+/* In order to allow for the hover background
+color to fully cover the area. */
+.navbar.navbar-expand-lg {
+  padding: 0 !important;
+}
+
+.navbar .nav-link {
+  padding: 20px !important;
+}
+
+.navbar li:hover {
+  background-color: violet !important;
+  outline: 0.5px solid white;
+  outline-offset: -0.5px;
+}
+
+.navbar li:hover a {
+  color: white !important;
+}
+
+
+/* =======================
+     .navbar-toggler
+======================== */
+
+
+nav .navbar-toggler.custom-toggler {
+  margin-right: 10px;
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+nav .navbar-toggler.custom-toggler:hover {
+	border: 1px solid rgba(255,255,255,1);
+}
+
+nav .navbar-toggler.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav .navbar-toggler.custom-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
